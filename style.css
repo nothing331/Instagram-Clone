@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body,html {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    display: flex;
+    z-index: 0;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.left_side{
+    width: 300px;
+    height: 370vh;
+    background-color: black;
+    border-right: solid 1px rgb(131, 131, 131);
+}
+.left_side img{
+    width: auto;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.main_feed{
+    width: 1000px;
+    height: 100%;
+    background-color: black;
+    /* border-right: solid 1px rgb(131, 131, 131); */
+    position: relative;
+}
+.right_side{
+    width: auto;
+    height: 370vh;
+    border-left: solid 1px rgb(131, 131, 131);
+}
+.story_header{
+    height: 170px;
+    width: 100%;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    padding-left: 8rem;
+    border-bottom: solid 1px rgb(131, 131, 131);
+    /* justify-content: center; */
+    overflow-x: auto;
+}
+.story_header::-webkit-scrollbar{
+    display: none;
+}
+.storyFull{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    /* color: red; */
+}
+.story{
+    width: 80px;
+    height: 80px;
+    border: 3px solid red;
+    /* background-color: red; */
+    border-radius: 50%;
+    overflow: hidden;
+}
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.storyFull h5{
+    padding-top: 10px;
+    font-weight: 100;
+}
+.fullscreen{
+    margin-left:25%;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    display: none;
+    transition: ease 0.3s;
+}
+.totalFull{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(74, 74, 74);
+    display: none;
+    transition: ease 0.3s;
+}
+.post_area{
+    height: 100%;
+    width: 100%;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.post_box{
+    margin-top: 30px;
+    height: 100%;
+    width: 400px;
+    /* background-color: blueviolet; */
+    border-bottom: solid 1px rgb(131, 131, 131);
+}
+.post_info_bar{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    height: 60px;
+    width: auto;
+    /* background-color: brown; */
+}
+.post_dp{
+    width: 50px;
+    height: 50px;
+    /* border: 3px solid red; */
+    /* background-color: red; */
+    border-radius: 50%;
+    overflow: hidden;
+}
+.post_dp img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+h5{
+    margin-left:10px ;
+    font-size: 15px;
+}
+.post_img{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    /* background-color: aqua; */
+    justify-content: center;
+}
+.post_img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.post_bar{
+    height: 40px;
+    width: 100%;
+    /* background-color: black; */
+    padding: 5px;
+}
+.post_bar i{
+    font-size: 30px;
+}
+#heart3{
+    display: contents;
+}
+#heart1{
+    color: red;
+    display: none;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform ease 0.4s;
+}
+#heart2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 70px;
+    transform: translate(-50%, -50%) scale(0) ;
+    z-index: 2;
+    opacity: 0.8; 
+    transition: transform ease 0.4s;
+}
+.post_bio{
+    display: flex;
+}
+.post_bio p{
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 100;
+}
+.post_com p{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: rgb(142, 142, 142);
+}
+.logos{
+    height: 80vh;
+    width: 100%;
+    /* background-color: aliceblue; */
+    margin-top: 50px;
+}
+.logos div{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    /* background-color: blue; */
+}
+.logos div i{
+    font-size: 25px;
+    margin-right:10px ;
+}
+.logos div:hover{
+    background-color: rgb(92, 92, 92);
+}
